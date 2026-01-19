@@ -1,0 +1,345 @@
+@import url("https://use.typekit.net/slg8rkt.css");
+@import url('https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Sansation', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+#background {
+    position: fixed;
+    inset: 0;
+    /* top:0; right:0; bottom:0; left:0 */
+    width: 100dvw;
+    height: 100vh;
+    background-image: url("https://blog.bondinho.com.br/wp-content/uploads/2024/05/iStock-1318334963-1.jpg");
+    background-size: cover;
+    z-index: -1;
+    filter: blur(10px);
+    transform: scale(1.1)
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    text-align: center;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 8vh;
+    border-radius: 10px;
+    z-index: 1;
+
+    h1 {
+        font-size: 4vh;
+        padding-left: 0px;
+    }
+
+    h3 {
+        padding-top: 5px;
+        padding-bottom: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+        font-weight: normal;
+        font-size: 2.5vh;
+    }
+}
+
+.wrapper .header-animation {
+
+    align-self: left;
+    justify-content: start;
+
+    left: 0px;
+    text-align: start;
+    padding: 5vh;
+    transition: 0.5s;
+
+    h1 {
+        font-size: 3.4vh;
+    }
+
+    h3 {
+        font-size: 2vh;
+    }
+
+    /*
+    header.style.width = "20%";
+    header.style.position = "fixed";
+    header.style.alignSelf = "left";
+    header.style.top = "50%";
+    header.style.transform = "translateY(-60%)";
+    header.style.left = "0px";
+    header.style.textAlign = "start";
+    header.style.padding = "6vh";
+    */
+}
+
+.button-primary {
+    padding: 1vh 3vw;
+    /* top/bottom | left/right */
+    font-size: 2vh;
+    letter-spacing: 1px;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    background-color: #BC9546;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.container {
+    padding: 30px;
+    width: 72%;
+    display: grid;
+    grid-gap: 2rem;
+    align-items: center;
+    background-color: white;
+    border-radius: 40px;
+    margin: 20px 0 20px 23%;
+    /* top right bottom left */
+    font-family: "poppins", sans-serif;
+    transform: translateY(30px);
+
+    h2 {
+        margin-bottom: 1rem;
+    }
+}
+
+.detail {
+    text-align: center;
+
+    img {
+        width: 100%;
+        border-radius: 20px;
+        object-fit: cover;
+        display: block;
+    }
+}
+
+.alimento {
+    margin-top: 25px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.ingredients {
+    text-align: start;
+    list-style-position: inside;
+    background-color: rgba(91, 79, 60, 0.5);
+    border-radius: 20px;
+    padding-left: 30px;
+    color: white;
+
+    text-shadow: 1px 1px 10 #51411f;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+a {
+    transform: translateY(4px)
+}
+
+.detalhes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    p {
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-top: 0px;
+    }
+}
+
+.description p {
+    line-height: 25px;
+    text-align: justify;
+
+}
+
+.youtube {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 32px;
+    /*Espaçamento entre as colunas */
+    padding: 0px;
+    margin: 0px;
+    /* align-items: center; */
+}
+
+.recipe {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    background-color: #BC9546;
+    width: 100%;
+    color: white;
+    border-radius: 10px;
+    justify-self: center;
+}
+
+.rodape {
+    position: relative;
+    display: flex;
+    height: 28px;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 30px 0px 30px;
+    /*background-color: rgba(170, 170, 170, 0.95);*/
+}
+
+.rodape img {
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+}
+
+#linkedin {
+    transform: scale(1.6);
+    margin-right: 10px;
+}
+
+.rodape p {
+    font-size: 12px;
+    line-height: 12px;
+    color: rgba(91, 79, 60, 0.9);
+}
+
+.creditos {
+    margin-left: auto;
+    margin-right: 10px;
+    text-align: right;
+}
+
+
+@media(min-width:1250px) {
+    .header {
+        width: 35%;
+        max-height: 45vh;
+    }
+
+}
+
+@media(min-width:801px) {
+    .header-animation {
+        top: 50%;
+        transform: translateY(-60%);
+        width: 20%;
+    }
+
+    .detail img {
+        height: 50vh;
+    }
+
+    .youtube {
+        min-height: 400px;
+    }
+
+    .description {
+        width: 80%;
+        transform: translateX(12%);
+    }
+}
+
+@media(max-width:1000px) {
+    .two-column {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width:800px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .header {
+        position: relative;
+        margin-bottom: auto;
+        justify-content: center;
+        align-self: center;
+        text-align: center;
+        width: 90vw;
+    }
+
+    .header-animation {
+        width: 90%;
+        align-self: center;
+        justify-content: center;
+        top: 0%;
+        transform: translateY(0%);
+        left: 0;
+        text-align: center;
+        padding: 5vh;
+    }
+
+    .container {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .detail img {
+        height: 50vh;
+    }
+
+    .detalhes p {
+        font-size: 15px;
+        text-align: center;
+        line-height: 15px;
+    }
+
+    .description {
+        width: 70vw;
+        transform: translateX(5%);
+    }
+
+    .rodape {
+        padding: 0px 10px;
+
+        p {
+            font-size: 8px;
+            color: black
+        }
+    }
+
+    .youtube {
+        height: 35vh;
+    }
+}
